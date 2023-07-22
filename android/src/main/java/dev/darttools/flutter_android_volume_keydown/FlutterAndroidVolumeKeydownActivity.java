@@ -28,10 +28,15 @@ public class FlutterAndroidVolumeKeydownActivity extends FlutterActivity {
 //            return super.onKeyDown(keyCode, event);
 //        }
 
-        switch (keyCode) {
-            case KeyEvent.KEYCODE_MEDIA_PLAY:
-                eventSink.success(true);
-                return true;
+//        switch (keyCode) {
+//            case KeyEvent.KEYCODE_MEDIA_PLAY:
+//                eventSink.success(true);
+//                return true;
+//        }
+
+        if(keyCode == KEYCODE_MEDIA_PLAY && eventSink != null) {
+            eventSink.success(true);
+            return true;
         }
 
         return super.onKeyDown(keyCode, event);
