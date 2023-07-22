@@ -6,10 +6,9 @@ import static android.view.KeyEvent.KEYCODE_VOLUME_UP;
 import static dev.darttools.flutter_android_volume_keydown.FlutterAndroidVolumeKeydownPlugin.eventSink;
 
 import android.view.KeyEvent;
-
 import java.io.Console;
-
 import io.flutter.embedding.android.FlutterActivity;
+import android.os.Build;
 
 public class FlutterAndroidVolumeKeydownActivity extends FlutterActivity {
     @Override
