@@ -8,7 +8,7 @@ import static dev.darttools.flutter_android_volume_keydown.FlutterAndroidVolumeK
 import android.view.KeyEvent;
 import java.io.Console;
 import io.flutter.embedding.android.FlutterActivity;
-import android.os.Build;
+//import android.os.Build;
 
 public class FlutterAndroidVolumeKeydownActivity extends FlutterActivity {
     @Override
@@ -24,9 +24,9 @@ public class FlutterAndroidVolumeKeydownActivity extends FlutterActivity {
         }
         */
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            return super.onKeyDown(keyCode, event);
-        }
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//            return super.onKeyDown(keyCode, event);
+//        }
 
         switch (keyCode) {
             case KeyEvent.KEYCODE_MEDIA_PLAY:
