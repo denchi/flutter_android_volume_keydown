@@ -23,6 +23,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 30
+    namespace "dev.darttools.flutter_android_volume_keydown"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
