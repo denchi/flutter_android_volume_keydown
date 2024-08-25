@@ -1,28 +1,20 @@
 group 'dev.darttools.flutter_android_volume_keydown'
 version '1.0'
+plugins {
 
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.0'
-    }
+    /**
+     * Use `apply false` in the top-level build.gradle file to add a Gradle
+     * plugin as a build dependency but not apply it to the current (root)
+     * project. Don't use `apply false` in sub-projects. For more information,
+     * see Applying external plugins with same version to subprojects.
+     */
+    id 'com.android.application' version '8.5.0'
+    id 'com.android.library' version '8.5.0'
 }
-
-rootProject.allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
-apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 34
+    namespace "dev.darttools.flutter_android_volume_keydown"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
